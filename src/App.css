@@ -1,38 +1,143 @@
-.App {
+app {
+    text-align: center;
+    padding: 20px;
+}
+h1{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  color:#A0DACF;
   }
+input.addForm{
+border-style: solid;
+border-color:#A0DACF ;
+border-radius: 4px;
+width:300px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#ccc;
+}
+button.addTodo{
+  border-style: solid;
+  background-color: #13AD89;
+  color:whitesmoke;
+  border-color:#13AD89;
+  width:150px;
+  text-decoration-style: solid;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color:#CCF5D3;
+}
+.todo-card span{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: end;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.filter label{
+  font-weight:bold
+}
+select option {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select option[value="All"] {
+  background: rgba(100, 100, 100, 0.3);
+}
+
+select option[value="Completed"] {
+  background: rgba(150, 150, 150, 0.3);
+}
+
+select option[value="Not Completed"] {
+  background: rgba(200, 200, 200, 0.3);
+}
+.todo-card{
+  width: 250px;
+}
+
+.todo-card h3 {
+    margin: 0;
+}
+
+.todo-card p {
+    margin: 5px 0;
+}
+.todo-card input {
+    margin-bottom: 5px;
+}
+.editButton{
+  background-color: #13AD89;
+  color: #ccc;
+  border-color: #13AD89 ;
+
+}
+.deleteButton{
+  background-color: #D05E1F;
+  color:#ccc;
+  border-color:#D05E1F;
+  color:#ccc;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border-style: solid;
+      border-radius: 8px;  
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form input,
+form button {
+    margin: 5px;
+    padding: 10px;
+}
+
+.filter {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin:30px
+}
+
+.filter select {
+    padding: 10px;
+    border-color:coral;
+    background-color: coral;
+    border-radius: 2px;
+}
+
+.filter select {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.filter option[value="All"] {
+  background: rgba(100, 100, 100, 0.3);
+}
+
+.filter option[value="Completed"] {
+  background: rgba(45, 230, 38, 0.3);
+}
+
+.filter option[value="Not Completed"] {
+  background: rgba(195, 55, 55, 0.3);
 }
